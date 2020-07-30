@@ -1,0 +1,122 @@
+/* KakaoTalk */
+
+.affinity-mapping-image {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+#affinity-mapping {
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+#competitiors {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+div .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prototype-row {
+    display: relative;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#mobile {
+    width: 100%;
+    max-width: 250px;
+}
+
+#desktop {
+    width: 100%;
+    max-width: 700px;
+}
+
+.prototype-row-2 img {
+    display: block;
+    margin-bottom: 20px;
+}
+
+#user-inflow {
+    width: 70%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.variation-a {
+    display: flex;
+    align-items: center;
+}
+
+.ab-testing-img {
+    padding: 0;
+}
+
+.variation-a-img {
+    padding: 0;
+}
+
+.variation-b-img {
+    padding: 0;
+}
+
+.variation-a div {
+    padding-right: 0px;
+}
+
+.variation-b div {
+    padding-right: 0px;
+}
+
+.variation-text {
+    padding: 0;
+}
+
+.variation-text h3 {
+    font-family: 'Gilmer';
+    font-size: 1.4rem;
+    margin-top: 15px;
+}
+
+.variation-text p {
+    font-family: 'Source-Sans-Pro';
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding: 0;
+}
+
+.variation-b {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.testing-result {
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    border-left: 10px;
+    border-color: black;
+}
+
+.testing-result p {
+    font-family: 'Source-Sans-Pro';
+    font-weight: 300;
+    font-size: 1.6rem;
+    padding: 0;
+}

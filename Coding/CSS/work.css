@@ -1,0 +1,502 @@
+/* Global styles */
+
+@font-face {
+    font-family: 'Gilmer';
+    src: url('../../Fonts/Gilmer/TTF/Gilmer Medium.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Source-Sans-Pro';
+    src: url('../../Fonts/Source_Sans_Pro/SourceSansPro-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Source-Sans-Pro';
+    src: url('../../Fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Source-Sans-Pro';
+    src: url('../../Fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'my-type-of-font';
+    src: url('../../Fonts/my_type_of_font/mytype.ttf') format('truetype');
+    font-weight: 600;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+body {
+    background-color: white;
+}
+
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 12rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.container {
+    width: 100%;
+    max-width: 98rem;
+    margin: 10px auto;
+    padding: 0 1.5rem;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    /* border-bottom: 1px solid black; */
+}
+
+.nav-brand {
+    width: 8rem;
+}
+
+.menu-icons i {
+    font-size: 3.5rem;
+    color: black;
+    cursor: pointer;
+}
+
+.close i {
+    color: black;
+}
+
+.nav-list {
+    width: 25rem;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    right: -28rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1500;
+    transition: all 650ms ease-in-out;
+}
+
+.nav-list.active {
+    right: 0;
+}
+
+.close {
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+}
+
+.nav-item {
+    margin: 1.5rem 0;
+}
+
+.nav-link {
+    font-family: 'Gilmer';
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    color: black;
+}
+
+.nav-link,
+.current {
+    color: black;
+    position: relative;
+    padding: 0;
+    margin-left: 30px;
+}
+
+.nav-link::before,
+.current::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -.2rem;
+    background-color: #E46570;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 650ms;
+}
+
+.current::before {
+    transform: scaleX(1);
+}
+
+.nav-link:hover::before {
+    transform: scaleX(1);
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 30px;
+    }
+}
+
+
+/* Navigation Media Query */
+
+@media screen and (min-width: 700px) {
+    header {
+        height: 12rem;
+    }
+    .nav-list {
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        box-shadow: none;
+        position: initial;
+        top: initial;
+        display: flex;
+        flex-direction: row;
+        transition: initial;
+    }
+    .menu-icons {
+        display: none;
+    }
+    .nav-item {
+        margin: 0 0 0 2rem;
+    }
+    .nav-link,
+    .current {
+        color: black;
+        position: relative;
+        font-size: 1.3rem;
+        padding: 0;
+        margin-left: 30px;
+    }
+    .nav-link::before,
+    .current::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -.2rem;
+        background-color: #E46570;
+        width: 100%;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 650ms;
+    }
+    .current::before {
+        transform: scaleX(1);
+    }
+    .nav-link:hover::before {
+        transform: scaleX(1);
+    }
+    .nav-link:hover {
+        color: black;
+    }
+}
+
+
+/* Back to top */
+
+.back-to-top {
+    padding: 0;
+}
+
+.top-container {
+    width: 100%;
+    height: 100px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+    margin-top: 100px;
+}
+
+.top-text-container div {
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-text-container {
+    width: 100%;
+    max-width: 98rem;
+    margin: 10px auto;
+    padding: 0 1.5rem;
+}
+
+.top-text-container a {
+    font-family: 'Source-Sans-Pro';
+    font-weight: 300;
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* Footer */
+
+.footer-box {
+    width: 100%;
+    height: 400px;
+    /* padding: 30px; */
+    background-color: #222222;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 98rem;
+    margin: 10px auto;
+    padding: 0 1.5rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 98rem;
+    margin: 10px auto;
+    padding: 0 1.5rem;
+}
+
+.logo-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo-footer div {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-footer h3 {
+    font-family: 'Gilmer';
+    font-size: 12px;
+    color: white;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-footer img {
+    width: 80px;
+    min-width: 80px;
+}
+
+.contact-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.email-footer {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.phone-footer {
+    display: block;
+}
+
+.contact-span {
+    font-family: 'Gilmer';
+    font-size: 12px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.line-span {
+    width: 20px;
+    height: 1.5px;
+    background-color: white;
+    content: "";
+    position: absolute;
+    display: inline-block;
+}
+
+.social-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+#facebook {
+    width: 120px;
+    height: 40px;
+    background-color: #F9DCDD;
+    color: #E46570;
+    font-family: 'Gilmer';
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    margin: 8px 0;
+    display: block;
+    line-height: 32px;
+}
+
+#instagram {
+    width: 120px;
+    height: 40px;
+    background-color: #E46570;
+    color: #F9DCDD;
+    font-family: 'Gilmer';
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    margin: 8px 0;
+    display: block;
+    line-height: 32px;
+}
+
+#behance {
+    width: 120px;
+    height: 40px;
+    background-color: #F8CC4F;
+    color: #E46570;
+    font-family: 'Gilmer';
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    margin: 8px 0;
+    display: block;
+    line-height: 32px;
+}
+
+#linkedin {
+    width: 120px;
+    height: 40px;
+    background-color: white;
+    color: #E46570;
+    font-family: 'Gilmer';
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    margin: 8px 0;
+    display: block;
+    line-height: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-box {
+        height: 600px;
+    }
+}
+
+
+/* Content */
+
+#title {
+    margin-top: 120px;
+    padding-bottom: 0;
+}
+
+.w-container {
+    width: 100%;
+    /* max-width: 70rem; */
+    margin: 40px auto;
+    padding: 0 1.5rem;
+    padding: 20px 0px 0px;
+    overflow: hidden;
+}
+
+.main-title h3 {
+    font-family: 'Gilmer';
+    font-size: 2rem;
+}
+
+.main-description p {
+    font-family: 'Source-Sans-Pro';
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+.title h3 {
+    font-family: 'Gilmer';
+    font-size: 1.6rem;
+}
+
+.description p {
+    font-family: 'Source-Sans-Pro';
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+figcaption {
+    font-family: 'Source-Sans-Pro';
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
