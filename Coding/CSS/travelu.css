@@ -53,14 +53,18 @@ div .center {
     flex-direction: column;
 }
 
-#desktop {
-    width: 100%;
-    max-width: 700px;
+@media (max-width: 375px) {
+    .prototype-row-2 img {
+        margin: 0;
+        max-height: 160px;
+    }
 }
 
 .prototype-row-2 img {
-    display: block;
-    margin-bottom: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
 }
 
 #user-inflow {
@@ -68,4 +72,16 @@ div .center {
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
+}
+
+#travel-expense {
+    max-width: 100%;
+    margin: unset;
+    height: unset;
+}
+
+@media (max-width: 375px) {
+    #travel-expense {
+        max-height: 285px;
+    }
 }

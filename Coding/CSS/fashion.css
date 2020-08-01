@@ -499,30 +499,17 @@ nav {
     text-align: center;
 }
 
+@media (max-width: 575px) {
+    .jumbotron-text {
+        height: 130px;
+    }
+}
+
 .jumbotron-text p {
     font-family: Source-Sans-Pro;
     font-size: 1.6rem;
     color: #292929;
     margin: 0;
-}
-
-#silent-echo-title {
-    color: white;
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
-    font-size: 21px;
-    letter-spacing: 0.7em;
-}
-
-#silent-lineup {
-    width: 100%;
-    display: block;
-}
-
-#life-is-sweet-lineup {
-    width: 100%;
-    max-width: 900px;
-    display: block;
-    margin: auto;
 }
 
 .design-process {
@@ -537,63 +524,12 @@ nav {
     text-align: center;
 }
 
-.portfolio-bg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: #f8f8f8;
-    padding: 100px 0;
-    margin-bottom: 0px;
-    position: relative;
-    overflow: hidden;
-    min-height: 95vh;
-}
-
-.portfolio-container {
-    overflow: hidden;
-    margin: 0 90px;
-}
-
-@media only screen and (max-width: 1024px) {
-    .portfolio-container {
-        margin: 0;
-    }
-}
-
-.portfolio-img {
-    display: flex;
-}
-
-.portfolio-img img {
-    width: 50%;
-}
-
-#silent-video {
-    width: 100%;
-    max-width: 800px;
-    display: flex;
-    margin: 50px auto;
-}
-
-.echo-container {
-    display: flex;
-    margin: 0;
-}
-
-#echo {
-    width: 60px;
-    margin: auto;
-}
-
-.photoshoot-img {
-    display: flex;
-    justify-content: center;
-}
-
-.photoshoot-img img {
-    max-width: 600px;
-    margin: 10px auto;
+img {
+    margin: auto !important;
+    width: unset !important;
+    max-width: 100%;
+    height: unset !important;
+    max-height: 400px;
 }
 
 .horizontal-row {
@@ -621,47 +557,15 @@ nav {
     margin: 10px 5px;
 }
 
-#img-7 {
-    width: auto;
-    height: 400px;
-    margin-bottom: 10px;
-    display: block;
-}
-
-
-/* Portfolio Carousel */
-
-.banner_slider {
-    width: 60%;
-    height: 60%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.banner_slider img {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-}
-
-.banner_slider .thumbnail_slider_area {
-    width: 100%;
-    justify-content: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.thumbnail_slider img {
-    margin: 0;
-    width: 100%;
-}
-
 
 /* Life is Sweet */
+
+#life-is-sweet-lineup {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: auto;
+}
 
 .center {
     display: block;
@@ -700,4 +604,14 @@ nav {
     font-size: .5em;
     text-align: center;
     line-height: .7em;
+}
+
+.img-col {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.img-col img {
+    width: 100vw;
 }

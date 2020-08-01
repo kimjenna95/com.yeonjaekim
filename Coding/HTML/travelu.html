@@ -7,7 +7,6 @@
     <meta name="description" content="Travel.U">
     <title>Travel.U</title>
     <link rel="stylesheet" type="text/css" href="../CSS/bootstrap-4.5.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/slick.css">
     <link rel="stylesheet" type="text/css" href="../CSS/work.css">
     <link rel="stylesheet" type="text/css" href="../CSS/travelu.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
@@ -24,7 +23,7 @@
 
     <!-- Navigation -->
     <header name="top">
-        <div class="container">
+        <div class="nav-container">
             <nav>
                 <div class="nav-brand">
                     <a href="../../index.html">
@@ -57,7 +56,7 @@
     <section id="title" name="top">
         <div class="container">
             <div>
-                <img class="center" id="title-image" src="../../Travel.U/Travel.U.png" alt="Title Image">
+                <img class="center" id="title-image" style="padding: 0 5px 0 5px;" src="../../Travel.U/Travel.U.png" alt="Title Image">
             </div>
         </div>
     </section>
@@ -143,13 +142,6 @@
                 </div>
                 <div class="col-md-8">
                     <div class="affinity-mapping-image">
-                        <!-- <div style="display:flex">
-                            <h5 style="position:relative;">Reviews</h5>
-                            <h5 style="position:relative;">Conflicts</h5>
-                            <h5 style="position:relative;">Schedule</h5>
-                            <h5 style="position:relative;">Communication</h5>
-                            <h5 style="position:relative;">Expenses</h5>
-                        </div> -->
                         <img id="affinity-mapping" src=" ../../Travel.U/Travel.U- AffinityMapping.png " alt="Affinity Mapping" style="margin-bottom: 50px;">
                         <img src="../../Travel.U/Travel.U- TravelNotes.png" alt="Travel Notes">
                         <figcaption style="margin-bottom: 30px;">A few screenshots that capture one of the traveler’s cluttered itinerary and expense notes
@@ -275,7 +267,7 @@
                         </p>
                     </div>
                     <div class="style-guide-img">
-                        <img src="../../Travel.U/Travel.U- StyleGuides.png" alt="Style Guides" style="margin-bottom: 30px;">
+                        <img src="../../Travel.U/Travel.U- StyleGuides.png" alt="Style Guides">
                     </div>
                 </div>
             </div>
@@ -289,7 +281,7 @@
                 </div>
                 <div class="col-md-8">
                     <div class="user-flow-img">
-                        <img style="margin-top: 10px;" src="../../Travel.U/Travel.U- UserFlow.png" alt="User Flow" style="margin-bottom: 30px;">
+                        <img src="../../Travel.U/Travel.U- UserFlow.png" alt="User Flow" style="margin: 10px 0 10px 0;">
                     </div>
                 </div>
             </div>
@@ -303,7 +295,7 @@
                 </div>
                 <div class="col-md-8">
                     <div class="description">
-                        <p style="margin-bottom: 30px;">
+                        <p>
                             From identifying the problems to the final prototype testing, users shared their inputs along the way and participated in reshaping the design. Their opinions were extremely helpful while I searched for solutions, tracing back as early as to the low-fi
                             stage. The valuable feedback from the users offered glimpses of how people interact with my product and how I can improve the design to craft better a user experience.
                         </p>
@@ -312,18 +304,18 @@
             </div>
 
 
-            <div class="row prototype-row w-container">
+            <div class="row prototype-row w-container" style="padding-top:0px;">
                 <div class="col-md-4 col-sm-12 mobile-row" style="padding: 0px;">
-                    <div class="row venmo-video-row w-container" style="margin: 0;">
-                        <video style="width:10%; min-width: 200px; display: block; margin: auto;" id="video" autoplay muted loop poster="">
+                    <div class="row venmo-video-row w-container" style="margin: 0; padding-top:0px;">
+                        <video style="width:10%; min-width: 200px; display: block; margin: auto;" id="video" autoplay muted loop playsinline poster="">
                             <source src="../../Travel.U/Travel.U- Mobile.mp4" type="video/mp4">
                           </video>
                         <figcaption style="text-align: center; margin: 0;">Mobile app</figcaption>
                     </div>
                 </div>
 
-                <div class="col-md-8 col-sm-12 desktop-row" style="padding: 0px;">
-                    <video style="width:100%; min-width: 450px; display: block; margin: auto;" id="video" autoplay muted loop poster="">
+                <div class="col-md-8 col-sm-12 desktop-row" style="padding: 10px;">
+                    <video id="desktop-video" style="width:100%; display: block; margin: auto; padding-top: 40px;" autoplay muted loop playsinline poster="">
                         <source src="../../Travel.U/Travel.U- Desktop.mp4" type="video/mp4">
                       </video>
                     <figcaption style="text-align: center; margin: 0;">App branding & marketing on desktop view</figcaption>
@@ -331,10 +323,14 @@
             </div>
 
 
-            <div class="row prototype-row-2 w-container">
+            <div class="row prototype-row-2 w-container" style="margin: auto;">
                 <img id="user-inflow" src="../../Travel.U/Travel.U- UserInflow.png" alt="User Inflow">
-                <img src="../../Travel.U/Travel.U- TravelExpense.png" alt="Travel Expense">
-                <img src="../../Travel.U/Travel.U- Calculation.png" alt="Calculation">
+            </div>
+            <div class="row prototype-row-2 w-container" style="margin: auto;">
+                <img id="travel-expense" src="../../Travel.U/Travel.U- TravelExpense.png" alt="Travel Expense">
+            </div>
+            <div class="row prototype-row-2 w-container" style="margin: auto;">
+                <img id="calculation" src="../../Travel.U/Travel.U- Calculation.png" alt="Calculation">
             </div>
 
 

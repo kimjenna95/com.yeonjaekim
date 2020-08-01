@@ -120,3 +120,37 @@ div .center {
     font-size: 1.6rem;
     padding: 0;
 }
+
+#story {
+    width: 100%;
+    max-width: 250px;
+    padding: 20px;
+}
+
+#story-text {
+    font-family: 'Source-Sans-Pro';
+    font-weight: 300;
+    font-size: 1.4rem;
+    padding: 20px;
+}
+
+#vertical-line {
+    width: 8px;
+    height: 65px;
+    background-color: black;
+    margin-right: 10px;
+    transform: translateY(5px);
+}
+
+@media (max-width: 375px) {
+    #vertical-line {
+        width: 12px;
+        height: 110px;
+    }
+    #story {
+        padding: 0;
+    }
+    #story-text {
+        padding: 0px 0px 0px 15px;
+    }
+}

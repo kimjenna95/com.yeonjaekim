@@ -7,8 +7,7 @@
     <meta name="description" content="Life is Sweet">
     <title>Life is Sweet</title>
     <link rel="stylesheet" type="text/css" href="../CSS/bootstrap-4.5.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/slick.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/fashion.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/lifeissweet.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -22,7 +21,7 @@
 <body>
 
     <!-- Navigation -->
-    <header style="z-index: 999;">
+    <header>
         <div class="container">
             <nav>
                 <div class="nav-brand">
@@ -53,11 +52,10 @@
     </header>
 
 
-
     <!--- Jumbotron Video -->
     <div class="jumbotron">
-        <h1 id="silent-echo-title">Life is Sweet</h1>
-        <video class="video-bg" src="../../Life is Sweet/Life is Sweet- Jumbotron.mp4" type="video/mp4" autoplay muted loop>
+        <h1 id="sweet-echo-title">Life is Sweet</h1>
+        <video class="video-bg" src="../../Life is Sweet/Life is Sweet- Jumbotron.mp4" type="video/mp4" type="video/mp4" playsinline autoplay muted loop poster="../../Life is Sweet/LifeisSweetJumbotron-Thumbnail.jpg">
             </video>
     </div>
 
@@ -70,8 +68,8 @@
 
 
     <!-- Proposal -->
-    <div class="row col-10 center proposal">
-        <div>
+    <div class="row col-12 proposal-container">
+        <div class="proposal-box">
             <p id="proposal">The collection “Life is Sweet “ was inspired by the work of an American artist Wayne Thiebaud, a specialist in painting desserts. I took this inspiration and studied the shapes and silhouettes that are typically seen in cakes and pastries,
                 and translated them into my designs. Pleats and layering were regularly used throughout to mimic the various layers that are often seen in cakes.  Wavy lines resembled the shapes of frosting when squeezed out of a piping bag. Details such
                 as the B/W striped-bias tapes outlining my garments were used to reinterpret Wayne Thiebaud’s use of contrasting colors that outlined his subjects and shadows in his paintings. The colors of the collection were taken directly from one
@@ -81,59 +79,231 @@
     </div>
 
     <!-- Lineup -->
-    <div class="lineup-container w-container">
+    <div class="lineup-container w-container" style="display: flex; justify-content: center; margin-top: 0;">
         <img id="life-is-sweet-lineup" src="../../Life is Sweet/YeonJaeKim_LineSheet.png" alt="Line Up">
     </div>
 
 
     <!-- Design Process -->
     <div class="portfolio-bg">
-        <div class="row portfolio-img portfolio-container" style="padding:0 30px;">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-01.png" alt="">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-02.png" alt="">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-03.png" alt="">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-04.png" alt="">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-05.png" alt="">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-06.png" alt="">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-07.png" alt="">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-08.png" alt="">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-09.png" alt="">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-10.png" alt="">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-11.png" alt="">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-12.png" alt="">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-13.png" alt="">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-14.png" alt="">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-15.png" alt="">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-16.png" alt="">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-17.png" alt="">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-18.png" alt="">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-19.png" alt=" ">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-20.png" alt=" ">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-21.png" alt=" ">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-22.png" alt=" ">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-23.png" alt=" ">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-24.png" alt=" ">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-25.png" alt=" ">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-26.png" alt=" ">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-27.png" alt=" ">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-28.png" alt=" ">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-29.png" alt=" ">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-30.png" alt=" ">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-31.png" alt=" ">
-            <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-32.png" alt=" ">
+        <div class="row w-container" style="padding: 0 15px">
+            <div class="row portfolio-img-row">
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-01.png" alt="">
+                </div>
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-02.png" alt="">
+                </div>
+            </div>
+            <div class="row portfolio-img-row">
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-03.png" alt="">
+                </div>
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-04.png" alt="">
+                </div>
+            </div>
+            <div class="row portfolio-img-row">
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-05.png" alt="">
+                </div>
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-06.png" alt="">
+                </div>
+            </div>
+            <div class="row portfolio-img-row">
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-07.png" alt="">
+                </div>
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-08.png" alt="">
+                </div>
+            </div>
+            <div class="row portfolio-img-row">
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-09.png" alt="">
+                </div>
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-10.png" alt="">
+                </div>
+            </div>
+            <div class="row portfolio-img-row">
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-11.png" alt="">
+                </div>
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-12.png" alt="">
+                </div>
+            </div>
+            <div class="row portfolio-img-row">
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-12.png" alt="">
+                </div>
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-14.png" alt="">
+                </div>
+            </div>
+            <div class="row portfolio-img-row">
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-15.png" alt="">
+                </div>
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-16.png" alt="">
+                </div>
+            </div>
+            <div class="row portfolio-img-row">
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-17.png" alt="">
+                </div>
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-18.png" alt="">
+                </div>
+            </div>
+            <div class="row portfolio-img-row">
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-19.png" alt="">
+                </div>
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-20.png" alt="">
+                </div>
+            </div>
+            <div class="row portfolio-img-row">
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-21.png" alt="">
+                </div>
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-22.png" alt="">
+                </div>
+            </div>
+            <div class="row portfolio-img-row">
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-23.png" alt="">
+                </div>
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-24.png" alt="">
+                </div>
+            </div>
+            <div class="row portfolio-img-row">
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-25.png" alt="">
+                </div>
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-26.png" alt="">
+                </div>
+            </div>
+            <div class="row portfolio-img-row">
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-27.png" alt="">
+                </div>
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-28.png" alt="">
+                </div>
+            </div>
+            <div class="row portfolio-img-row">
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-29.png" alt="">
+                </div>
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-30.png" alt="">
+                </div>
+            </div>
+            <div class="row portfolio-img-row">
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-31.png" alt="">
+                </div>
+                <div class="col-md-6 img-col" style="display: flex;">
+                    <img src="../../Life is Sweet/Life is Sweet- Portfolio/LifeisSweet-32.png" alt="">
+                </div>
+            </div>
         </div>
     </div>
 
 
     <!-- Video -->
-    <video class="w-container" id="silent-video" controls poster="../../Life is Sweet/Life is Sweet_Video Thumbnail.png">
+    <video class="w-container" id="sweet-video" controls playsinline poster="../../Life is Sweet/Life is Sweet_Video Thumbnail.png">
         <source src="../../Life is Sweet/YeonJae Kim_Life is Sweet.mp4" type="video/mp4">
       </video>
 
 
     <!-- Photoshoot -->
-    <div class="row photoshoot-img w-container">
-
+    <div class="row photoshoot-row w-container">
+        <div class="row photoshoot-img" style="margin: 2px auto;">
+            <div class="col-4" style="padding: 0;">
+                <img class="sweet-photoshoot-img" src="../../Life is Sweet/Life is Sweet- Photoshoot/1.jpg" alt="">
+            </div>
+            <div class="col-4" style="padding: 0;">
+                <img class="sweet-photoshoot-img" src="../../Life is Sweet/Life is Sweet- Photoshoot/2.jpg" alt="">
+            </div>
+            <div class="col-4" style="padding: 0;">
+                <img class="sweet-photoshoot-img" src="../../Life is Sweet/Life is Sweet- Photoshoot/3.jpg" alt="">
+            </div>
+        </div>
+        <div class="row photoshoot-img" style="margin: 2px auto;">
+            <div class="col-4" style="padding: 0;">
+                <img class="sweet-photoshoot-img" src="../../Life is Sweet/Life is Sweet- Photoshoot/4.jpg" alt="">
+            </div>
+            <div class="col-4" style="padding: 0;">
+                <img class="sweet-photoshoot-img" src="../../Life is Sweet/Life is Sweet- Photoshoot/5.jpg" alt="">
+            </div>
+            <div class="col-4" style="padding: 0;">
+                <img class="sweet-photoshoot-img" src="../../Life is Sweet/Life is Sweet- Photoshoot/6.jpg" alt="">
+            </div>
+        </div>
+        <div class="row photoshoot-img" style="margin: 2px auto;">
+            <div class="col-4" style="padding: 0;">
+                <img class="sweet-photoshoot-img" src="../../Life is Sweet/Life is Sweet- Photoshoot/7.jpg" alt="">
+            </div>
+            <div class="col-4" style="padding: 0;">
+                <img class="sweet-photoshoot-img" src="../../Life is Sweet/Life is Sweet- Photoshoot/8.jpg" alt="">
+            </div>
+            <div class="col-4" style="padding: 0;">
+                <img class="sweet-photoshoot-img" src="../../Life is Sweet/Life is Sweet- Photoshoot/9.jpg" alt="">
+            </div>
+        </div>
+        <div class="row photoshoot-img" style="margin: 2px auto;">
+            <div class="col-4" style="padding: 0;">
+                <img class="sweet-photoshoot-img" src="../../Life is Sweet/Life is Sweet- Photoshoot/10.jpg" alt="">
+            </div>
+            <div class="col-4" style="padding: 0;">
+                <img class="sweet-photoshoot-img" src="../../Life is Sweet/Life is Sweet- Photoshoot/11.jpg" alt="">
+            </div>
+            <div class="col-4" style="padding: 0;">
+                <img class="sweet-photoshoot-img" src="../../Life is Sweet/Life is Sweet- Photoshoot/12.jpg" alt="">
+            </div>
+        </div>
+        <div class="row photoshoot-img" style="margin: 2px auto;">
+            <div class="col-4" style="padding: 0;">
+                <img class="sweet-photoshoot-img" src="../../Life is Sweet/Life is Sweet- Photoshoot/13.jpg" alt="">
+            </div>
+            <div class="col-4" style="padding: 0;">
+                <img class="sweet-photoshoot-img" src="../../Life is Sweet/Life is Sweet- Photoshoot/14.jpg" alt="">
+            </div>
+            <div class="col-4" style="padding: 0;">
+                <img class="sweet-photoshoot-img" src="../../Life is Sweet/Life is Sweet- Photoshoot/15.jpg" alt="">
+            </div>
+        </div>
+        <div class="row photoshoot-img" style="margin: 2px auto;">
+            <div class="col-4" style="padding: 0;">
+                <img class="sweet-photoshoot-img" src="../../Life is Sweet/Life is Sweet- Photoshoot/16.jpg" alt="">
+            </div>
+            <div class="col-4" style="padding: 0;">
+                <img class="sweet-photoshoot-img" src="../../Life is Sweet/Life is Sweet- Photoshoot/17.jpg" alt="">
+            </div>
+            <div class="col-4" style="padding: 0;">
+                <img class="sweet-photoshoot-img" src="../../Life is Sweet/Life is Sweet- Photoshoot/18.jpg" alt="">
+            </div>
+        </div>
+        <div class="row photoshoot-img" style="margin: 2px auto;">
+            <div class="col-4" style="padding: 0;">
+                <img class="sweet-photoshoot-img" src="../../Life is Sweet/Life is Sweet- Photoshoot/19.jpg" alt="">
+            </div>
+            <div class="col-4" style="padding: 0;">
+                <img class="sweet-photoshoot-img" src="../../Life is Sweet/Life is Sweet- Photoshoot/20.jpg" alt="">
+            </div>
+            <div class="col-4" style="padding: 0;">
+                <img class="sweet-photoshoot-img" src="../../Life is Sweet/Life is Sweet- Photoshoot/21.jpg" alt="">
+            </div>
+        </div>
     </div>
 
 
@@ -153,13 +323,13 @@
 
 
     <!-- Back to top -->
-    <section class="back-to-top ">
+    <section class="back-to-top">
 
-        <div class="top-container ">
-            <div class="top-text-container ">
+        <div class="top-container">
+            <div class="top-text-container">
                 <div>
-                    <a href=" index.html " style="font-family: 'Source-Sans-Pro'; font-weight: 300; font-size: 14px; color: #333; ">Home</a>
-                    <a href="#top " style="font-family: 'Source-Sans-Pro'; font-weight: 300; font-size: 14px; color: #333; ">Back to top ↑</a>
+                    <a href=" index.html" style="font-family: 'Source-Sans-Pro'; font-weight: 300; font-size: 14px; color: #333;">Home</a>
+                    <a href="#top" style="font-family: 'Source-Sans-Pro'; font-weight: 300; font-size: 14px; color: #333;">Back to top ↑</a>
                 </div>
             </div>
         </div>
@@ -168,25 +338,25 @@
     <!-- Footer -->
     <footer>
         <div>
-            <div class="footer-box ">
-                <div class="container-fluid footer-container ">
-                    <div class="row ">
-                        <div class="col-md-2 col-sm-12 logo-footer ">
+            <div class="footer-box">
+                <div class="container-fluid footer-container">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-12 logo-footer">
                             <div>
                                 <h3>GET IN TOUCH</h3>
                             </div>
                             <div>
                                 <a href="../../index.html">
-                                    <img src="../../yeonjae-logo.svg" alt=" ">
+                                    <img src="../../yeonjae-logo.svg" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-8 col-sm-12 contact-footer">
                             <div class="email-footer">
-                                <span class="contact-span ">E-MAIL: KIMJENNA95@GMAIL.COM</span>
+                                <span class="contact-span">E-MAIL: KIMJENNA95@GMAIL.COM</span>
                             </div>
                             <div class="phone-footer">
-                                <span class="contact-span ">PHONE NUMBER: +1 (404) 889-1161</span>
+                                <span class="contact-span">PHONE NUMBER: +1 (404) 889-1161</span>
                             </div>
                         </div>
                         <div class="col-md-2 col-sm-12 social-footer">
@@ -202,15 +372,11 @@
     </footer>
 
 
-    <script type="text/javascript " src="../../Coding/JS/hamburger.js "></script>
-    <!-- <script type="text/javascript " src="../../Coding/JS/observers.js "></script> -->
-    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js "></script>
+    <script type="text/javascript" src="../../Coding/JS/hamburger.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <!-- <script type=" text/javascript " src="../JS/jquery-3.3.1.min.js "></script>
-            <script type="text/javascript " src="../JS/slick.js "></script>
-            <script type="text/javascript " src="../JS/silentecho.js "></script> -->
 </body>
 
 </html>

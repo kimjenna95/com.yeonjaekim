@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Dermatology - Case Study">
-    <title>Dermatology - Case Study</title>
+    <meta name="description" content="Dermatology- Case Study">
+    <title>Dermatology- Case Study</title>
     <link rel="stylesheet" type="text/css" href="../CSS/bootstrap-4.5.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../CSS/slick.css">
     <link rel="stylesheet" type="text/css" href="../CSS/work.css">
@@ -23,7 +23,7 @@
 <body data-spy="scroll" data-target="#work" data-offset="40px">
     <!-- Navigation -->
     <header name="top">
-        <div class="container">
+        <div class="nav-container">
             <nav>
                 <div class="nav-brand">
                     <a href="../../index.html">
@@ -65,7 +65,7 @@
             <div class="row main-row w-container">
                 <div class="col-12">
                     <div class="main-title">
-                        <h3>Dermatologist - Case Study</h3>
+                        <h3>Dermatologist- Case Study</h3>
                     </div>
                 </div>
                 <div class="col-12">
@@ -193,26 +193,32 @@
 
             <div class="row desktop-row w-container" style="margin-bottom: 0px;">
                 <div class="video-background">
-                    <video id="video" controls autoplay muted loop poster="../../Dermatology/Dermatology-DesktopThumbnail.png">
+                    <video id="desktop-video" controls autoplay playsinline muted loop poster="../../Dermatology/Dermatology-DesktopThumbnail.png">
                     <source src="../../Dermatology/Dermatology- Desktop.mp4" type="video/mp4">
                   </video>
                 </div>
-                <img style="margin-top: 50px;" src="../../Dermatology/Dermatology- Desktop.png" alt="Desktop">
+                <img id="desktop-img" style="margin-top: 50px;" src="../../Dermatology/Dermatology- Desktop.png" alt="Desktop">
             </div>
             <figcaption style="text-align: center; margin: 0px;">For devices larger than 768px</figcaption>
 
 
-            <div class="row mobile-row w-container" style="margin-bottom: 0px;">
-                <div class="mobile-video-container" style="display: flex;">
-                    <video class="mobile-video" autoplay muted loop poster="">
+            <div class="row mobile-row w-container">
+                <div class="mobile-video-container" style="display: flex;"></div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 video-padding-right" style="margin-bottom: 50px;">
+                        <video class="mobile-video" autoplay playsinline muted loop poster="">
                         <source src="../../Dermatology/Dermatology.mp4" type="video/mp4">
                       </video>
-
-                    <video class="mobile-video" autoplay muted loop poster="">
+                    </div>
+                    <div class="col-md-6 col-sm-12 video-padding-left" style="margin-bottom: 20px;">
+                        <video class="mobile-video" autoplay playsinline muted loop poster="">
                         <source src="../../Dermatology/Dermatology- Appt.mp4" type="video/mp4">
                       </video>
+                    </div>
                 </div>
-                <img style="margin-top: 30px" src="../../Dermatology/Dermatology- BookAppt.png" alt="Book Appointment">
+            </div>
+            <div>
+                <img id="book-apt-img" style="margin-top: 30px" src="../../Dermatology/Dermatology- BookAppt.png" alt="Book Appointment">
             </div>
             <figcaption style="text-align: center; margin: 0px;">Booking process on mobile</figcaption>
 
@@ -270,7 +276,7 @@
     <section class="back-to-top">
 
         <div class="top-container">
-            <div class="top-text-container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000">
+            <div class="top-text-container">
                 <div>
                     <a href=" ../../index.html" style="font-family: 'Source-Sans-Pro'; font-weight: 300; font-size: 14px; color: #333;">Home</a>
                     <a href="#top" style="font-family: 'Source-Sans-Pro'; font-weight: 300; font-size: 14px; color: #333;">Back to top ↑</a>
@@ -284,7 +290,7 @@
         <div>
             <div class="footer-box">
                 <div class="container-fluid footer-container">
-                    <div class="row" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000">
+                    <div class="row">
                         <div class="col-md-2 col-sm-12 logo-footer">
                             <div>
                                 <h3>GET IN TOUCH</h3>

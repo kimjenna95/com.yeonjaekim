@@ -17,18 +17,58 @@ video {
     border-radius: 10px;
 }
 
+.mobile-row {
+    width: 100%;
+    justify-content: center;
+}
+
 .mobile-video {
-    width: 30%;
-    margin-left: 30px;
-    margin-right: 30px;
+    max-width: 300px;
+    margin: auto;
     padding: 0px;
+}
+
+.video-padding-left {
+    padding-left: 30px;
+}
+
+.video-padding-right {
+    padding-right: 30px;
 }
 
 .mobile-video-container {
     justify-content: center;
 }
 
-.mobile-row {
-    margin: auto;
-    width: 100%;
+@media (max-width: 375px) {
+    .video-background {
+        margin: 10px;
+        border-radius: 0px;
+        max-height: 250px;
+    }
+    #desktop-video {
+        max-height: 300px;
+    }
+    .video-padding-left {
+        padding: 0;
+    }
+    .video-padding-right {
+        padding: 0;
+    }
+    #desktop-img {
+        max-height: 450px;
+    }
+    #book-apt-img {
+        max-height: 200px;
+    }
 }
+
+
+/* 
+@media (max-width: 575px) {
+    .img-responsive {
+        width: auto;
+        max-width: 100%;
+        max-height: auto;
+    }
+} */

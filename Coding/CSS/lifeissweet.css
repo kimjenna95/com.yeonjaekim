@@ -1,3 +1,5 @@
+/* Global styles */
+
 @font-face {
     font-family: 'Gilmer';
     src: url('../../Fonts/Gilmer/TTF/Gilmer Medium.ttf') format('truetype');
@@ -28,193 +30,569 @@
     font-weight: 600;
 }
 
-* {
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-
-/* @media screen and (max-width:1024px) {
-    #notes-img {
-        width: 80%;
-    }
+a {
+    text-decoration: none;
 }
 
-@media screen and (max-width:375px) {
-    #notes-img {
-        width: 80%;
-    }
-} */
+ul {
+    list-style: none;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 2rem 0;
+}
 
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2rem;
-    line-height: 1.5;
+    background-color: white;
     overflow-x: hidden;
 }
 
-.v-header {
-    height: 95vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    padding-bottom: 0;
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 12rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .container {
-    max-width: 960px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: auto;
-    text-align: center;
-    padding-bottom: 0;
-}
-
-.fullscreen-video-wrap {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 95vh;
-    overflow: hidden;
+    max-width: 98rem;
+    margin: 10px auto;
+    padding: 0 1.5rem;
 }
 
-.fullscreen-video-wrap video {
-    min-width: 100%;
-    min-height: 100%;
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    /* border-bottom: 1px solid black; */
 }
 
-.header-overlay {
-    width: 100vw;
-    height: 95vh;
-    position: absolute;
+.nav-brand {
+    width: 8rem;
+}
+
+.menu-icons i {
+    font-size: 3.5rem;
+    color: black;
+    cursor: pointer;
+}
+
+.close i {
+    color: black;
+}
+
+.nav-list {
+    width: 25rem;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    position: fixed;
     top: 0;
-    left: 0;
-    background: black;
-    z-index: 1;
-    opacity: 0.5;
-}
-
-.header-content {
-    z-index: 2;
-}
-
-.header-content h1 {
-    font-family: 'Gilmer';
-    font-size: 30px;
-    letter-spacing: 0.4em;
-}
-
-.jumbotron {
+    right: -28rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding: 30px;
-    text-align: center;
+    z-index: 1500;
+    transition: all 650ms ease-in-out;
 }
 
-.jumbotron-text {
+.nav-list.active {
+    right: 0;
+}
+
+.close {
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+}
+
+.nav-item {
+    margin: 1.5rem 0;
+}
+
+.nav-link {
     font-family: 'Gilmer';
-    line-height: 2;
-    font-size: .9rem;
-    color: #292929;
-    margin: 0;
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    color: black;
 }
 
-#fashion-logo {
+.nav-link,
+.current {
+    color: black;
+    position: relative;
+    padding: 0;
+    margin-left: 30px;
+}
+
+.nav-link::before,
+.current::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -.2rem;
+    background-color: #E46570;
     width: 100%;
-    max-width: 200px;
-    margin-top: 10px;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 650ms;
+}
+
+.current::before {
+    transform: scaleX(1);
+}
+
+.nav-link:hover::before {
+    transform: scaleX(1);
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 0 30px 30px 30px;
+    }
+}
+
+
+/* Navigation Media Query */
+
+@media screen and (min-width: 700px) {
+    header {
+        height: 12rem;
+    }
+    .nav-list {
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        box-shadow: none;
+        position: initial;
+        top: initial;
+        display: flex;
+        flex-direction: row;
+        transition: initial;
+    }
+    .menu-icons {
+        display: none;
+    }
+    .nav-item {
+        margin: 0 0 0 2rem;
+    }
+    .nav-link,
+    .current {
+        color: black;
+        position: relative;
+        font-size: 1.3rem;
+        padding: 0;
+        margin-left: 30px;
+    }
+    .nav-link::before,
+    .current::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -.2rem;
+        background-color: #E46570;
+        width: 100%;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 650ms;
+    }
+    .current::before {
+        transform: scaleX(1);
+    }
+    .nav-link:hover::before {
+        transform: scaleX(1);
+    }
+    .nav-link:hover {
+        color: black;
+    }
+}
+
+
+/* Back to top */
+
+.back-to-top {
+    padding: 0;
+}
+
+.top-container {
+    width: 100%;
+    height: 100px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+    margin-top: 100px;
+}
+
+.top-text-container div {
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-text-container {
+    width: 100%;
+    max-width: 98rem;
+    margin: 10px auto;
+    padding: 0 1.5rem;
+}
+
+.top-text-container a {
+    font-family: 'Source-Sans-Pro';
+    font-weight: 300;
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* Footer */
+
+.footer-box {
+    width: 100%;
+    height: 400px;
+    /* padding: 30px; */
+    background-color: #222222;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 98rem;
+    margin: 10px auto;
+    padding: 0 1.5rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 98rem;
+    margin: 10px auto;
+    padding: 0 1.5rem;
+}
+
+.logo-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo-footer div {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-footer h3 {
+    font-family: 'Gilmer';
+    font-size: 12px;
+    color: white;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-footer img {
+    width: 80px;
+    min-width: 80px;
+}
+
+.contact-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.email-footer {
+    display: block;
     margin-bottom: 10px;
 }
 
-.proposal {
+.phone-footer {
+    display: block;
+}
+
+.contact-span {
+    font-family: 'Gilmer';
+    font-size: 12px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.line-span {
+    width: 20px;
+    height: 1.5px;
+    background-color: white;
+    content: "";
+    position: absolute;
+    display: inline-block;
+}
+
+.social-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+#facebook {
+    width: 120px;
+    height: 40px;
+    background-color: #F9DCDD;
+    color: #E46570;
+    font-family: 'Gilmer';
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    margin: 8px 0;
+    display: block;
+    line-height: 32px;
+}
+
+#instagram {
+    width: 120px;
+    height: 40px;
+    background-color: #E46570;
+    color: #F9DCDD;
+    font-family: 'Gilmer';
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    margin: 8px 0;
+    display: block;
+    line-height: 32px;
+}
+
+#behance {
+    width: 120px;
+    height: 40px;
+    background-color: #F8CC4F;
+    color: #E46570;
+    font-family: 'Gilmer';
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    margin: 8px 0;
+    display: block;
+    line-height: 32px;
+}
+
+#linkedin {
+    width: 120px;
+    height: 40px;
+    background-color: white;
+    color: #E46570;
+    font-family: 'Gilmer';
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    margin: 8px 0;
+    display: block;
+    line-height: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-box {
+        height: 600px;
+    }
+}
+
+
+/* Life is Sweet  */
+
+.jumbotron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 120px;
+    margin-bottom: 0px;
+    position: relative;
+    overflow: hidden;
+    min-height: 95vh;
+}
+
+.video-bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+#sweet-echo-title {
+    color: white;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 21px;
+    letter-spacing: 0.7em;
+}
+
+.w-container {
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 3rem;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .w-container {
+        padding: 0;
+    }
+}
+
+.jumbotron-text {
+    background-color: #f8f8f8;
+    height: 100px;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.proposal-container {
+    display: flex;
+    margin: auto;
+    padding: 0 40px;
+}
+
+.proposal-box {
     background-color: #F9DCDD;
     padding: 20px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-radius: 10px;
+    margin: 50px auto;
+    justify-content: center;
     border: 5px dotted #E46570;
+    display: block;
 }
 
 #proposal {
     font-family: 'Source-Sans-Pro';
     font-weight: 400;
-    font-size: .9rem;
+    font-size: 1.6rem;
     line-height: 1.75;
     color: #E46570;
     margin-bottom: 0;
-    text-align: center;
+    text-align: justify;
 }
 
-#notes-img {
-    width: 100%;
-    max-width: 500px;
-    margin-top: 40px;
-    margin-bottom: 75px;
-}
-
-.banner_slider {
-    width: 60%;
-    height: 60%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.banner_slider img {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-}
-
-.banner_slider .thumbnail_slider_area {
-    width: 100%;
-    justify-content: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.container {
-    margin: auto;
-    padding: 0;
-    justify-content: center;
-}
-
-.thumbnail_slider img {
-    margin: 0;
-    width: 100%;
-}
-
-.col {
-    padding: 5px;
-}
-
-#video {
-    width: 100%;
+#life-is-sweet-lineup {
     max-width: 800px;
-    margin: 100px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.portfolio-bg {
+    background: #f8f8f8;
+    padding: 30px 80px;
+    margin-bottom: 0px;
 }
 
-#lineup {
+@media (max-width: 992px) {
+    .portfolio-bg {
+        padding: 30px 0;
+    }
+}
+
+.img-col {
+    padding: 0;
+}
+
+@media (max-width: 375px) {
+    .jumbotron-text {
+        background-color: #f8f8f8;
+        height: 150px;
+    }
+    .proposal-container {
+        padding: 0 10px;
+    }
+    .proposal-box {
+        background-color: #F9DCDD;
+        border: 3px dotted #E46570;
+    }
+    #life-is-sweet-lineup {
+        max-height: 180px;
+    }
+    .img-col img {
+        max-height: 230px;
+    }
+}
+
+#sweet-video {
     width: 100%;
-    max-width: 1000px;
+    max-width: 830px;
+    display: flex;
+    margin: 65px auto;
+}
+
+.sweet-photoshoot-img {
+    max-width: 260px;
+    padding: 0 2px;
 }
 
 #features-title {
     font-family: 'Source-Sans-Pro';
     font-weight: 300;
+    margin-bottom: 15px;
 }
 
 .features {
@@ -223,8 +601,4 @@ body {
     font-size: .5em;
     text-align: center;
     line-height: .7em;
-}
-
-.inline-block {
-    display: inline-block;
 }
