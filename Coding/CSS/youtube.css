@@ -1,0 +1,124 @@
+/* Youtube */
+
+.affinity-mapping-image {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+#affinity-mapping {
+    width: 100%;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.number {
+    width: 20%;
+    max-width: 30px;
+    display: block;
+    margin: 5px auto;
+}
+
+.question-text {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.task-steps {
+    background-color: #F9F9F9;
+    padding: 10px;
+    width: 150px;
+}
+
+.task-right-arrow {
+    height: 15px;
+    width: auto;
+    margin: 20px 5px;
+}
+
+@media (max-width: 375px) {
+    .task-step-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .task-steps {
+        width: unset;
+    }
+    .task-right-arrow {
+        transform: rotate(90deg);
+        width: 8px;
+        height: auto;
+        margin: unset;
+    }
+}
+
+.task-steps h3 {
+    font-family: 'Source-Sans-Pro';
+    font-size: 12px;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 15px;
+}
+
+.task-steps p {
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+}
+
+.senerio-heading {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.senerio-heading h3 {
+    font-family: 'Source-Sans-Pro';
+    font-size: 16px;
+    text-align: center;
+}
+
+.senerio-box {
+    display: flex;
+    background-color: #F9F9F9;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.senerio-box h3 {
+    font-family: 'Source-Sans-Pro';
+    font-size: 16px;
+}
+
+.senerio-text {
+    text-align: center;
+    align-self: center;
+}
+
+.senerio-text p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.down-arrow {
+    display: flex;
+    justify-content: center;
+}
+
+.prototype-box {
+    background-color: #F9F9F9;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.prototype-box h3 {
+    font-family: 'Source-Sans-Pro';
+    font-size: 16px;
+    text-align: center;
+}
