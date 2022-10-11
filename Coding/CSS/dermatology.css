@@ -3,7 +3,7 @@
 video {
     width: 100%;
     display: block;
-    padding: 40px;
+    padding: 16px;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
@@ -46,18 +46,23 @@ video {
         border-radius: 0px;
         max-height: 250px;
     }
+
     #desktop-video {
         max-height: 300px;
     }
+
     .video-padding-left {
         padding: 0;
     }
+
     .video-padding-right {
         padding: 0;
     }
+
     #desktop-img {
         max-height: 450px;
     }
+
     #book-apt-img {
         max-height: 200px;
     }

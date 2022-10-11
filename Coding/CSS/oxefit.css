@@ -1,0 +1,130 @@
+/* Oxefit */
+
+.page-container {
+    width: 100%;
+    max-width: 160rem;
+    margin: 10px auto;
+    padding: 0 30px 30px 30px;
+}
+
+
+#hi-fi {
+    width: 15%;
+    min-width: 200px;
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+}
+
+#fitness {
+    max-width: 700px;
+    margin-top: 40px;
+}
+
+.number {
+    width: 20%;
+    max-width: 30px;
+    display: block;
+    margin: 5px auto;
+}
+
+.takeaway-text {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#competitiors {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+div .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prototype-row {
+    display: relative;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.venmo-video-row {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 375px) {
+    .prototype-row-2 img {
+        margin: 0;
+        max-height: 160px;
+    }
+}
+
+.prototype-row-2 img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+#user-inflow {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+#travel-expense {
+    max-width: 100%;
+    margin: unset;
+    height: unset;
+}
+
+@media (max-width: 375px) {
+    #travel-expense {
+        max-height: 285px;
+    }
+}
+
+
+#oxefit-col-right {
+    text-align: right;
+    padding: 0px;
+}
+
+#oxefit-col-left {
+    text-align: left;
+    padding: 0px;
+}
+
+@media (max-width: 768px) {
+    #oxefit-col-right {
+        text-align: center;
+    }
+
+    #oxefit-col-left {
+        text-align: center;
+    }
+}
+
+
+.btn {
+    font-family: 'Gilmer';
+    font-size: 1.2rem;
+    background-color: #181614;
+    border-radius: 2rem;
+    color: #ffffff;
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    transition: background-color 650ms;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #181614;
+    border: 1px solid #181614;
+}

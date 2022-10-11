@@ -1,0 +1,79 @@
+/* 2Checkout */
+
+video {
+    width: 100%;
+    display: block;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.video-background {
+    display: flex;
+    width: 100%;
+    background-color: black;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.mobile-row {
+    width: 100%;
+    justify-content: center;
+}
+
+.mobile-video {
+    max-width: 300px;
+    margin: auto;
+    padding: 0px;
+}
+
+.video-padding-left {
+    padding-left: 30px;
+}
+
+.video-padding-right {
+    padding-right: 30px;
+}
+
+.mobile-video-container {
+    justify-content: center;
+}
+
+@media (max-width: 375px) {
+    .video-background {
+        margin: 10px;
+        border-radius: 0px;
+        max-height: 250px;
+    }
+
+    #desktop-video {
+        max-height: 300px;
+    }
+
+    .video-padding-left {
+        padding: 0;
+    }
+
+    .video-padding-right {
+        padding: 0;
+    }
+
+    #desktop-img {
+        max-height: 450px;
+    }
+
+    #book-apt-img {
+        max-height: 200px;
+    }
+}
+
+
+/* 
+@media (max-width: 575px) {
+    .img-responsive {
+        width: auto;
+        max-width: 100%;
+        max-height: auto;
+    }
+} */

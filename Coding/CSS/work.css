@@ -94,7 +94,7 @@ header {
     width: 100%;
     max-width: 98rem;
     margin: 10px auto;
-    padding: 0 30px 30px 30px;
+    padding: 0 30px 0px 30px;
 }
 
 @media (max-width: 375px) {
@@ -205,6 +205,7 @@ nav {
     header {
         height: 12rem;
     }
+
     .nav-list {
         width: initial;
         height: initial;
@@ -216,12 +217,15 @@ nav {
         flex-direction: row;
         transition: initial;
     }
+
     .menu-icons {
         display: none;
     }
+
     .nav-item {
         margin: 0 0 0 2rem;
     }
+
     .nav-link,
     .current {
         color: black;
@@ -230,6 +234,7 @@ nav {
         padding: 0;
         margin-left: 30px;
     }
+
     .nav-link::before,
     .current::before {
         content: "";
@@ -243,12 +248,15 @@ nav {
         transform-origin: left;
         transition: transform 650ms;
     }
+
     .current::before {
         transform: scaleX(1);
     }
+
     .nav-link:hover::before {
         transform: scaleX(1);
     }
+
     .nav-link:hover {
         color: black;
     }
@@ -269,7 +277,6 @@ nav {
     align-items: center;
     justify-content: center;
     padding: 0 1.5rem;
-    margin-top: 100px;
 }
 
 .top-text-container div {
@@ -396,64 +403,39 @@ nav {
     padding: 20px 0;
 }
 
-#facebook {
+.social-button {
     width: 120px;
     height: 40px;
-    background-color: #F9DCDD;
-    color: #E46570;
     font-family: 'Gilmer';
     font-size: 1.4rem;
     font-weight: 600;
     border: none;
     border-radius: 25px;
     margin: 8px 0;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     line-height: 32px;
+}
+
+#facebook {
+    background-color: #F9DCDD;
+    color: #E46570;
 }
 
 #instagram {
-    width: 120px;
-    height: 40px;
     background-color: #E46570;
     color: #F9DCDD;
-    font-family: 'Gilmer';
-    font-size: 1.4rem;
-    font-weight: 600;
-    border: none;
-    border-radius: 25px;
-    margin: 8px 0;
-    display: block;
-    line-height: 32px;
 }
 
 #behance {
-    width: 120px;
-    height: 40px;
     background-color: #F8CC4F;
     color: #E46570;
-    font-family: 'Gilmer';
-    font-size: 1.4rem;
-    font-weight: 600;
-    border: none;
-    border-radius: 25px;
-    margin: 8px 0;
-    display: block;
-    line-height: 32px;
 }
 
 #linkedin {
-    width: 120px;
-    height: 40px;
     background-color: white;
     color: #E46570;
-    font-family: 'Gilmer';
-    font-size: 1.4rem;
-    font-weight: 600;
-    border: none;
-    border-radius: 25px;
-    margin: 8px 0;
-    display: block;
-    line-height: 32px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -514,6 +496,7 @@ figcaption {
     #venmo-video {
         max-height: 500px;
     }
+
     .venmo-video-row {
         margin: 0;
     }

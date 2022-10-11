@@ -199,6 +199,7 @@ nav {
     header {
         height: 12rem;
     }
+
     .nav-list {
         width: initial;
         height: initial;
@@ -210,12 +211,15 @@ nav {
         flex-direction: row;
         transition: initial;
     }
+
     .menu-icons {
         display: none;
     }
+
     .nav-item {
         margin: 0 0 0 2rem;
     }
+
     .nav-link,
     .current {
         color: black;
@@ -224,6 +228,7 @@ nav {
         padding: 0;
         margin-left: 30px;
     }
+
     .nav-link::before,
     .current::before {
         content: "";
@@ -237,12 +242,15 @@ nav {
         transform-origin: left;
         transition: transform 650ms;
     }
+
     .current::before {
         transform: scaleX(1);
     }
+
     .nav-link:hover::before {
         transform: scaleX(1);
     }
+
     .nav-link:hover {
         color: black;
     }
@@ -390,66 +398,6 @@ nav {
     padding: 20px 0;
 }
 
-#facebook {
-    width: 120px;
-    height: 40px;
-    background-color: #F9DCDD;
-    color: #E46570;
-    font-family: 'Gilmer';
-    font-size: 1.4rem;
-    font-weight: 600;
-    border: none;
-    border-radius: 25px;
-    margin: 8px 0;
-    display: block;
-    line-height: 32px;
-}
-
-#instagram {
-    width: 120px;
-    height: 40px;
-    background-color: #E46570;
-    color: #F9DCDD;
-    font-family: 'Gilmer';
-    font-size: 1.4rem;
-    font-weight: 600;
-    border: none;
-    border-radius: 25px;
-    margin: 8px 0;
-    display: block;
-    line-height: 32px;
-}
-
-#behance {
-    width: 120px;
-    height: 40px;
-    background-color: #F8CC4F;
-    color: #E46570;
-    font-family: 'Gilmer';
-    font-size: 1.4rem;
-    font-weight: 600;
-    border: none;
-    border-radius: 25px;
-    margin: 8px 0;
-    display: block;
-    line-height: 32px;
-}
-
-#linkedin {
-    width: 120px;
-    height: 40px;
-    background-color: white;
-    color: #E46570;
-    font-family: 'Gilmer';
-    font-size: 1.4rem;
-    font-weight: 600;
-    border: none;
-    border-radius: 25px;
-    margin: 8px 0;
-    display: block;
-    line-height: 32px;
-}
-
 @media only screen and (max-width: 768px) {
     .footer-box {
         height: 600px;
@@ -562,16 +510,20 @@ nav {
         background-color: #f8f8f8;
         height: 150px;
     }
+
     .proposal-container {
         padding: 0 10px;
     }
+
     .proposal-box {
         background-color: #F9DCDD;
         border: 3px dotted #E46570;
     }
+
     #life-is-sweet-lineup {
         max-height: 180px;
     }
+
     .img-col img {
         max-height: 230px;
     }

@@ -1,0 +1,77 @@
+/* American Party Animals */
+
+.page-container {
+    width: 100%;
+    max-width: 160rem;
+    margin: 10px auto;
+    padding: 0 30px 30px 30px;
+}
+
+
+.AFA-container {
+    width: 100%;
+    max-width: 98rem;
+    margin: 10px auto;
+    padding: 0 30px 0px 30px;
+}
+
+.takeaway-text {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+div .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prototype-row {
+    display: relative;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#AFA-NFT {
+    width: 90%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+
+.btn {
+    font-family: 'Gilmer';
+    font-size: 1.2rem;
+    background-color: #181614;
+    border-radius: 2rem;
+    color: #ffffff;
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    transition: background-color 650ms;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #181614;
+    border: 1px solid #181614;
+}
+
+.AFA-btn {
+    font-family: 'Gilmer';
+    font-size: 1.2rem;
+    background-color: #ffffff;
+    border: 1px solid #181614;
+    border-radius: 2rem;
+    color: #181614;
+    display: inline-block;
+    padding: .5rem 2rem;
+    transition: background-color 650ms;
+}
+
+.AFA-btn:hover {
+    background-color: #181614;
+    color: #ffffff;
+    text-decoration: none;
+}
